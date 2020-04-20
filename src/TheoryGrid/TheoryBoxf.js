@@ -86,7 +86,7 @@ export const TheoryBox = props => {
             gridtype = "tgridwithouticon";
           }
 
-          console.log("html zeug:", tcard.html_text_copied);
+          console.log("html zeug:", tcard.html_text);
           // var gridTextHtml = (
           //   <Fragment>
           //     {tcard.text}
@@ -96,7 +96,7 @@ export const TheoryBox = props => {
           var gridTextHtml = (
             <div
               className="exampleTable"
-              dangerouslySetInnerHTML={{ __html: tcard.html_text_copied }}
+              dangerouslySetInnerHTML={{ __html: tcard.html_text }}
             />
           );
 
